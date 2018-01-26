@@ -1,0 +1,9 @@
+{
+  "global": [
+    "top-container",
+    "bottom-container"
+  ],
+  "index": [
+    "main-container"
+  ]
+}
