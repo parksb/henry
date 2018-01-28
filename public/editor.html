@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Henry Admin</title>
+    <style>
+      input[type="text"] {
+        width: 99.5%;
+        font-size: 1.0em;
+        padding: 10px 0 10px 0.5%;
+        margin: 10px 0 10px 0;
+        background-color: #EFEFEF;
+        border: 0;
+      }
+      
+      input[type="submit"] {
+        width: 200px;
+        font-size: 1.0em;
+        padding: 10px;
+        margin: 20px 0 0 0;
+        background-color: #FFFFFF;
+        border: 1px solid #000000;
+        cursor: pointer;
+        float: right;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #000000;
+        color: #FFFFFF;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/" id="editor-form" method="POST">
+      <input type="text" name="title" placeholder="Title" />
+      <div id="editor"></div>
+      <input type="submit" value="Publish" />
+    </form>
+    <script src="src/editorBundle.js"></script>
+  </body>
+</html>

@@ -12,11 +12,6 @@ export default class App {
     return DATA;
   }
 
-  getTheme() {
-    const SITE = this.getJsonData('/data/site.json');
-    return SITE.site.theme;
-  }
-
   // Get current location from the url path.
   getCurrLocation() {
     let path = window.location.pathname.split('/');
@@ -32,12 +27,12 @@ export default class App {
   }
 
   getModules() {
-    const STRUCTURE = this.getJsonData(`/theme/${this.getTheme()}/structure.json`);
+    const STRUCTURE = this.getJsonData(`/components/structure.json`);
     const CURR_LOCA = this.getCurrLocation();
 
-    const GLOBAL_MODULES = STRUCTURE.global;
-    const LOCAL_MODULES = STRUCTURE[CURR_LOCA];
+    const GLOBAL_COMPONENTS = STRUCTURE.global;
+    const LOCAL_COMPONENTS = STRUCTURE[CURR_LOCA];
     
-    return [GLOBAL_MODULES, LOCAL_MODULES];
+    return [GLOBAL_COMPONENTS, LOCAL_COMPONENTS];
   }
 }

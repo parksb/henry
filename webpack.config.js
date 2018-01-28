@@ -6,16 +6,15 @@ const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 
 module.exports = {
   entry: {
-    'mainBundle': './src/main.js',
-    'indexBundle': './src/index.js',
-    'adminBundle': './src/admin.js',
+    'mainBundle': ['./src/main.js', './src/app/app.js'],
+    'editorBundle': './src/editor.js',
   },
   output: {
     path: path.resolve(__dirname, './dist/src/'),
     filename: '[name].js'
   },
   devServer: {
-    contentBase: path.join(__dirname, './dist/'),
+    contentBase: './dist/',
     compress: true,
     port: 9000
   },
@@ -33,6 +32,9 @@ module.exports = {
       }, {
         test: /\.json$/,
         loader: 'json-loader'
+      }, {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
       }
     ]
   },
@@ -40,12 +42,6 @@ module.exports = {
     new CopyWebpackPlugin([{
       from: path.join(__dirname, './public/'),
       to: path.join(__dirname, './dist/')
-    }, {
-      from: path.join(__dirname, './data/'),
-      to: path.join(__dirname, './dist/data/')
-    }, {
-      from: path.join(__dirname, './theme/'),
-      to: path.join(__dirname, './dist/theme/')
     }]),
     new HardSourceWebpackPlugin()
   ],
