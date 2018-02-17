@@ -6,9 +6,9 @@ const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 
 module.exports = {
   entry: {
-    'mainBundle': ['./src/main.js', './src/app.js'],
+    'mainBundle': './src/main.js',
     'pageBundle': './src/page.js',
-    'editorBundle': './src/editor.js'
+    'indexBundle': './src/index.js'
   },
   output: {
     path: path.resolve(__dirname, './dist/src/'),
