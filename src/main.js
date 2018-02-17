@@ -6,7 +6,7 @@ const APP = new App();
 const GLOBAL_COMPONENTS = APP.getModules()[0];
 const LOCAL_COMPONENTS = APP.getModules()[1];
 
-const SITE_CONF_PATH = '/config/site.json';
+const SITE_CONF_PATH = '/site.json';
 
 for (let i in GLOBAL_COMPONENTS) {
   const TEMPLATE_PATH = `/components/global/${GLOBAL_COMPONENTS[i]}.html`;

@@ -1,2 +1,8 @@
-<h2>main-container: Hello, Henry!</h2>
-<a href="admin.html">GO TO ADMIN PAGE</a>
+{{#pages}}
+<a href="page.html?i={{id}}">
+  <div class="item">
+    <img src="/img/{{id}}/0.png" alt="{{title}} thumbnamil">
+    <h1>{{title}}</h1>
+  </div>
+</a>
+{{/pages}}
