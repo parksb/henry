@@ -1,0 +1,16 @@
+#main-container {
+  max-width: 900px;
+  min-width: 200px;
+  margin: 50px auto;
+}
+
+#main-container h1 {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+#main-container p {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: left;
+}

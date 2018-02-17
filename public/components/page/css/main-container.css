@@ -1,9 +1,8 @@
 #main-container {
   max-width: 900px;
   min-width: 200px;
-  margin: auto;
+  margin: 50px auto;
   text-align: center;
-  margin-top: 50px;
 }
 
 #main-container h1 {

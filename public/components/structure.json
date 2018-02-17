@@ -8,5 +8,8 @@
   ],
   "page": [
     "main-container"
+  ],
+  "about": [
+    "main-container"
   ]
 }
