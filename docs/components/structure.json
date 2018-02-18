@@ -1,0 +1,15 @@
+{
+  "global": [
+    "top-container",
+    "bottom-container"
+  ],
+  "index": [
+    "main-container"
+  ],
+  "page": [
+    "main-container"
+  ],
+  "about": [
+    "main-container"
+  ]
+}

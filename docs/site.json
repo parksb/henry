@@ -1,0 +1,9 @@
+{
+  "site": {
+    "title": "Henry's Portfolio",
+    "admin": "Henry Jekyll",
+    "email": "henry@henry.com",
+    "created_at": "2018",
+    "description": "This is my portfolio"
+  }
+}
